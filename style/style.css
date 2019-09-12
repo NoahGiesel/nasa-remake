@@ -12,6 +12,7 @@ body {
   background-color: #1f1e41;
   color: #ffe9cd;
   overflow-x: hidden;
+  background-color: #111;
 }
 
 hr {
@@ -30,9 +31,21 @@ p, a {
   font-family: 'Roboto Mono', monospace;
 }
 
+@media screen and (max-width: 500px) {
+  p, a {
+    font-size: 15px !important;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   font-family: 'Hepta Slab', serif;
+}
+
+@media screen and (max-width: 500px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 33px !important;
+  }
 }
 
 .landing {
@@ -147,12 +160,24 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
 }
 
+@media screen and (max-width: 500px) {
+  .landing .text .container h3 {
+    font-size: 33px;
+  }
+}
+
 .landing .text .container p {
   width: 80%;
   text-align: left;
   line-height: 25px;
   font-size: 16px;
   margin: 0 auto 200px auto;
+}
+
+@media screen and (max-width: 500px) {
+  .landing .text .container p {
+    margin: 0 auto;
+  }
 }
 
 .landing .text .container a {
@@ -444,6 +469,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #a0a0a0;
 }
 
+.InSight_graph .container div h6 {
+  font-size: 33px !important;
+}
+
 footer {
   height: 50vh;
   width: 100%;
@@ -459,5 +488,11 @@ footer h2 {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 500px) {
+  footer h2 {
+    font-size: 20px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

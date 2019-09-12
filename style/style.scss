@@ -20,6 +20,7 @@ body {
     background-color: rgb(31, 30, 65);
     color: rgb(255, 233, 205);
     overflow-x: hidden;
+    background-color : #111 ; 
 
 }
 
@@ -36,11 +37,21 @@ hr {
 p , a {
     letter-spacing: 1px;
     font-family: 'Roboto Mono', monospace;
+
+    @media screen and (max-width: 500px) {
+        font-size : 15px !important;
+    }
 }
 
 h1 , h2, h3 , h4 , h5 ,h6 {
     letter-spacing: 1px;
     font-family: 'Hepta Slab', serif;
+
+    
+    @media screen and (max-width: 500px) {
+        font-size : 33px !important; 
+
+    }
 
 }
 // landing 
@@ -148,6 +159,10 @@ h1 , h2, h3 , h4 , h5 ,h6 {
                 font-size: 55px;
                 width: 100%;
                 margin: 10px 0 ; 
+                
+                @media screen and (max-width: 500px) {
+                    font-size : 33px ; 
+               }
             }
 
             p { 
@@ -158,6 +173,10 @@ h1 , h2, h3 , h4 , h5 ,h6 {
                 margin : 0 auto 200px auto;
 
                 
+                 @media screen and (max-width: 500px) {
+                         margin : 0 auto ;
+
+                    }
             }
 
             a { 
@@ -348,7 +367,7 @@ h1 , h2, h3 , h4 , h5 ,h6 {
         height:auto;
     }
     
-    }
+    } 
 
     .text { 
         height : 100%;
@@ -377,7 +396,7 @@ h1 , h2, h3 , h4 , h5 ,h6 {
         width : 75%;
         margin: 0 auto;
         line-height: 25px;
-
+   
     }
 }
 
@@ -415,6 +434,9 @@ h1 , h2, h3 , h4 , h5 ,h6 {
             &:hover {
                 background-color: rgb(160, 160, 160);
             }
+            h6 {
+                font-size : 33px !important; 
+            }
         }
 
         
@@ -434,6 +456,12 @@ footer {
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%,-50%)
+        transform: translate(-50%,-50%);
+        
+    @media screen and (max-width: 500px) {
+        font-size :  20px !important; 
+
+    }
+
     }
 }
