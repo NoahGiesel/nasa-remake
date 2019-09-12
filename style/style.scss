@@ -23,7 +23,16 @@ body {
 
 }
 
- 
+hr { 
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
 p , a {
     letter-spacing: 1px;
     font-family: 'Roboto Mono', monospace;
@@ -42,8 +51,14 @@ h1 , h2, h3 , h4 , h5 ,h6 {
     display: grid;
     grid-template-columns: 50% 50%;
 
+    @media screen and (max-width: 1300px) {
 
+        grid-template-rows: 50% 50%;
+        grid-template-columns: none ;
+        text-align : center;
 
+    }
+ 
     .planet {
         position: relative;
             
@@ -53,6 +68,30 @@ h1 , h2, h3 , h4 , h5 ,h6 {
                 left: -45%;
                 top: -45%;
                 border-radius: 50%; 
+
+                @media screen and (max-width: 1300px) {
+                    
+                    width: 70%;
+
+                    left: 20%;
+                    top: -45%;
+            
+                }
+ 
+
+                @media screen and (max-width: 700px) {
+                    
+                    background-color: rgb(255, 255, 255);
+                    box-shadow:
+                        0 0 60px 30px #fff,  /* inner white */
+                        0 0 100px 60px #f0f, /* middle magenta */
+                        0 0 140px 90px #0ff; /* outer cyan */  
+                     
+                    top: 30%; 
+                }
+ 
+                
+
                 transition: all  600ms   ease-in-out; 
                 transform: rotate(360deg);
                 animation: spin 60s linear infinite;
@@ -78,7 +117,16 @@ h1 , h2, h3 , h4 , h5 ,h6 {
                         0 0 140px 90px #0ff; /* outer cyan */                
                     
                     left: -25%;
-                    top: -25%;
+                    top: -25%; 
+
+                    
+                @media screen and (max-width: 1300px) {
+
+                    left:  20%;
+                    top: 0%;
+            
+                }
+ 
                     }
             }
     }
@@ -107,7 +155,9 @@ h1 , h2, h3 , h4 , h5 ,h6 {
                 text-align: left;
                 line-height: 25px;
                 font-size: 16px;
-                margin-bottom: 200px;
+                margin : 0 auto 200px auto;
+
+                
             }
 
             a { 
@@ -123,19 +173,36 @@ h1 , h2, h3 , h4 , h5 ,h6 {
                 transition: 200ms ;
                 border: 1px solid rgba(230, 230, 250, 0);
 
+                @media screen and (max-width: 1300px) {
+
+                    left: 50%;
+                    transform: translateX(-50%);
+            
+                }
+
+
                 &:hover {
                     background-color: #222;
                     color: rgb(0, 255, 149);               
                     border: 1px solid rgb(0, 255, 149);
 
-
+                    .imgPlanet{ 
+                        background-color: rgb(255, 255, 255);
+                        box-shadow:
+                            0 0 60px 30px #fff,  /* inner white */
+                            0 0 100px 60px #f0f, /* middle magenta */
+                            0 0 140px 90px #0ff; /* outer cyan */                
+                        
+                        left: -25%;
+                        top: -25%;
+                        }
                 }
+                 
             }
         }
     }
 }
  
-
 //////////////////////////////////////
 
 
@@ -148,7 +215,7 @@ h1 , h2, h3 , h4 , h5 ,h6 {
     height: 100vh;
     z-index: -10;
 
-    /*
+    
 #stars {
     width: 1px;
     height: 1px;
@@ -199,7 +266,7 @@ h1 , h2, h3 , h4 , h5 ,h6 {
     background: transparent;
     box-shadow: 1504px 168px #FFF , 1738px 1763px #FFF , 854px 1314px #FFF , 690px 219px #FFF , 1532px 320px #FFF , 1487px 1307px #FFF , 220px 70px #FFF , 559px 800px #FFF , 730px 1994px #FFF , 1836px 1755px #FFF , 1229px 242px #FFF , 1264px 653px #FFF , 1819px 505px #FFF , 555px 1537px #FFF , 321px 809px #FFF , 353px 563px #FFF , 368px 1742px #FFF , 1928px 319px #FFF , 786px 773px #FFF , 781px 393px #FFF , 7px 1439px #FFF , 558px 835px #FFF , 1739px 1033px #FFF , 412px 759px #FFF , 107px 1927px #FFF , 36px 1681px #FFF , 1588px 834px #FFF , 1362px 1826px #FFF , 880px 924px #FFF , 1472px 348px #FFF , 1658px 841px #FFF , 658px 558px #FFF , 152px 1136px #FFF , 1311px 1097px #FFF , 1249px 1048px #FFF , 673px 1704px #FFF , 824px 788px #FFF , 1212px 1015px #FFF , 1776px 494px #FFF , 1100px 802px #FFF , 1663px 845px #FFF , 1303px 1361px #FFF , 1208px 598px #FFF , 447px 565px #FFF , 458px 1006px #FFF , 843px 644px #FFF , 891px 394px #FFF , 843px 1474px #FFF , 1230px 180px #FFF , 1907px 999px #FFF , 1978px 1583px #FFF , 646px 676px #FFF , 952px 195px #FFF , 934px 1919px #FFF , 1982px 1416px #FFF , 1044px 1159px #FFF , 1143px 1592px #FFF , 1553px 430px #FFF , 339px 420px #FFF , 38px 1274px #FFF , 1484px 1822px #FFF , 161px 503px #FFF , 37px 386px #FFF , 332px 89px #FFF , 469px 31px #FFF , 1108px 796px #FFF , 1545px 1224px #FFF , 1454px 1597px #FFF , 413px 334px #FFF , 1265px 1518px #FFF , 141px 1512px #FFF , 1292px 1694px #FFF , 1269px 1363px #FFF , 1853px 1590px #FFF , 1888px 1641px #FFF , 1047px 1755px #FFF , 302px 115px #FFF , 1222px 1115px #FFF , 1494px 1098px #FFF , 456px 363px #FFF , 1211px 425px #FFF , 980px 1578px #FFF , 847px 1127px #FFF , 412px 1845px #FFF , 1498px 847px #FFF , 1157px 1211px #FFF , 1711px 1487px #FFF , 26px 1014px #FFF , 950px 1823px #FFF , 1673px 449px #FFF , 485px 1524px #FFF , 1828px 35px #FFF , 352px 17px #FFF , 299px 142px #FFF , 1349px 1654px #FFF , 49px 840px #FFF , 1596px 586px #FFF , 294px 1530px #FFF , 822px 779px #FFF , 1278px 184px #FFF;
   }
-  */ 
+ 
   #title {
     position: absolute;
     top: 50%;
@@ -251,8 +318,9 @@ h1 , h2, h3 , h4 , h5 ,h6 {
 
 
 .textForAbout {
-    margin : 80px 0 ; 
+    margin : 80px auto ; 
     text-align: center;
+    width : 80%;
 }
 
 .about__mars {
@@ -261,24 +329,37 @@ h1 , h2, h3 , h4 , h5 ,h6 {
     display: grid ; 
     grid-template-columns: 50% 50%;
 
+    @media screen and (max-width: 1300px) {
+        grid-template-rows: auto auto;
+        grid-template-columns: none;
+    }
+
     img { 
+        margin : 0 auto ; 
         width: 90%;
         border-radius: 10px;
         -webkit-box-shadow: 0px 0px 26px 2px rgba(250,250,250,.1);
         -moz-box-shadow: 0px 0px 26px 2px rgba(250,250,250,.1);
         box-shadow: 0px 0px 26px 2px rgba(250,250,250,.1);
+ 
+      
+    @media screen and (max-width: 1300px) {
+        width : 50%;
+        height:auto;
+    }
+    
     }
 
     .text { 
+        height : 100%;
         position: relative; 
         width: 100%;
 
         .container {
             width: 100%;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%,-50%);
+            display : flex; 
+            justify-content : center ;
+            align-items : center;
 
             p { 
                 width: 90%; 
@@ -290,12 +371,69 @@ h1 , h2, h3 , h4 , h5 ,h6 {
 
 
 .InSight {
-    width: 100%;
-
+    width: 100%; 
+    
     p {
         width : 75%;
         margin: 0 auto;
         line-height: 25px;
 
+    }
+}
+
+
+.InSight_graph { 
+    width : 80%; 
+    margin: 70px auto ;  
+
+
+    .container { 
+        display: grid ; 
+        grid-template-columns: auto auto auto auto auto auto; 
+        text-align: center;
+        
+        @media screen and (min-width: 1400px) {
+            grid-template-columns: auto auto auto  ; 
+        }
+
+
+        @media screen and (max-width: 1300px) {
+            grid-template-columns: auto auto   auto; 
+        }
+
+        @media screen and (max-width: 750px) {
+            grid-template-columns:  auto; 
+        }
+
+        div { 
+            margin: 10px 5px;
+            padding: 0 20%;
+            background-color: silver;
+            color : #333;
+            font-weight: bold ;
+
+            &:hover {
+                background-color: rgb(160, 160, 160);
+            }
+        }
+
+        
+    }
+}
+
+
+footer {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    background-color: #090A0F;
+
+    text-align : center;
+    h2 {
+        width : 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%)
     }
 }

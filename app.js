@@ -24,6 +24,7 @@
         date.innerText = data.date;
         imgOfDay.src = data.url;
         imgOfDay_HD.src = data.hdurl;
+        textOfDay.innerText = ""
         textOfDay.innerText = data.explanation
     })
 /*  the json file is not returning enough data to be able to work. (at the time of developing this site) May be update in future
