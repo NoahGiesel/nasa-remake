@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nasa API </title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <!-- backgound -->
+    <div class="bg">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+    </div>
+
+
+    <!-- landing -->
+    <div class="landing">
+        <div class="planet">
+            <img draggable="false" src="./img/planet_landing_edged.png" alt="">
+        </div>
+        <div class="text">
+            <div class="container"> 
+                <h3>Discover our system</h3>
+                <p>
+                    Use NASA API at it finest ! Discover new planets and get more 
+                    informations about our planet and those who surround us ...
+                </p>
+                <a href="#mars">DISCOVER</a>
+            </div>  
+        </div>
+    </div>
+
+    <div class="divider" id="mars">
+        <h2>Explore <span>Mars</span> !</h2>
+    </div>
+
+    <p class="textForAbout" > This two images have been captured by "<span id="copyright"></span>"  on "<span id="date"></span>" !</p>
+
+    <div class="about__mars">
+        <img id="imgOfDay" src="" alt="">
+        <div class="text">
+            <div class="container">
+                <p id="textOfDay_one">   </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="about__mars"> 
+        <div class="text">
+            <div class="container">
+                <p> This is the image of the day, but it's in HD ! Sometimes NASA capture something else as the HD image and so it could also be slightly different from the image above.</p>
+            </div>
+        </div>
+        <img id="imgOfDay_HD" src="" alt="">
+
+    </div>
+
+
+
+
+
+
+    <div class="divider" id="mars">
+        <h2> <span>InSight</span>: Mars Weather</h2>
+    </div>
+
+
+
+    <div class="InSight">
+        <p>NASA’s InSight Mars lander takes continuous weather measurements (temperature, wind, pressure) on the surface of Mars at Elysium Planitia, a flat, smooth plain near Mars’ equator.</p>
+        <br>
+        <br>
+        <p>This API provides per-Sol summary data for each of the last seven available Sols (Martian Days). As more data from a particular Sol are downlinked from the spacecraft (sometimes several days later), these values are recalculated, and consequently may change as more data are received on Earth.</p>
+        <br>
+        <br>
+        <p>
+            During the development of this site this API was still in "beta" and was not working as pretended! The InSight JSON file couldn't return 
+            enough "Mars-SOL data" to be able to return informations like : wind speed , Atmospheric temperature , horizontal or vertical wind speed  ! 
+            The graph below is just for illustrative purpose and is not 100% accurate with real possible data .
+        </p>
+    </div>
+
+
+    <div class="InSight_graph">
+        <div class="container">
+            <div>
+                <h6>Title</h6>
+                <p>date</p>
+                <br class="line">
+                <p>date</p>
+                <p>date</p>
+            </div> 
+            <div>
+                <h6>Title</h6>
+                <p>date</p>
+                <br class="line">
+                <p>date</p>
+                <p>date</p>
+            </div> 
+            <div>
+                <h6>Title</h6>
+                <p>date</p>
+                <br class="line">
+                <p>date</p>
+                <p>date</p>
+            </div> 
+            <div>
+                <h6>Title</h6>
+                <p>date</p>
+                <br class="line">
+                <p>date</p>
+                <p>date</p>
+            </div> 
+            <div>
+                <h6>Title</h6>
+                <p>date</p>
+                <br class="line">
+                <p>date</p>
+                <p>date</p>
+            </div> 
+            <div>
+                <h6>Title</h6>
+                <p>date</p>
+                <br class="line">
+                <p>date</p>
+                <p>date</p>
+            </div> 
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
