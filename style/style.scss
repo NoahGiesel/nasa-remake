@@ -72,7 +72,8 @@ h1 , h2, h3 , h4 , h5 ,h6 {
  
     .planet {
         position: relative;
-            
+                 
+  
             img {
                 width: 110%;
                 position: absolute;
@@ -143,18 +144,28 @@ h1 , h2, h3 , h4 , h5 ,h6 {
     }
 
 
-    .text  {
+    .textSection  {
         position: relative;
         height: 100%;
         width: 100%;
-
+        .text { 
+            font-weight: 100;
+            font-size: 20px;
+            color: #fafafa;
+            margin : 0 auto ; 
+            font-family: 'Roboto Mono', monospace !important;
+        }
+        .dud {
+            color: #757575;
+        }
         .container {
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%,-50%);
             width: 100%;
-
+        
+             
             h3 { 
                 font-size: 55px;
                 width: 100%;

@@ -139,13 +139,25 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.landing .text {
+.landing .textSection {
   position: relative;
   height: 100%;
   width: 100%;
 }
 
-.landing .text .container {
+.landing .textSection .text {
+  font-weight: 100;
+  font-size: 20px;
+  color: #fafafa;
+  margin: 0 auto;
+  font-family: 'Roboto Mono', monospace !important;
+}
+
+.landing .textSection .dud {
+  color: #757575;
+}
+
+.landing .textSection .container {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -154,19 +166,19 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
-.landing .text .container h3 {
+.landing .textSection .container h3 {
   font-size: 55px;
   width: 100%;
   margin: 10px 0;
 }
 
 @media screen and (max-width: 500px) {
-  .landing .text .container h3 {
+  .landing .textSection .container h3 {
     font-size: 33px;
   }
 }
 
-.landing .text .container p {
+.landing .textSection .container p {
   width: 80%;
   text-align: left;
   line-height: 25px;
@@ -175,12 +187,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 500px) {
-  .landing .text .container p {
+  .landing .textSection .container p {
     margin: 0 auto;
   }
 }
 
-.landing .text .container a {
+.landing .textSection .container a {
   position: absolute;
   left: 40%;
   -webkit-transform: translateX(-50%);
@@ -197,20 +209,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 1300px) {
-  .landing .text .container a {
+  .landing .textSection .container a {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
 }
 
-.landing .text .container a:hover {
+.landing .textSection .container a:hover {
   background-color: #222;
   color: #00ff95;
   border: 1px solid #00ff95;
 }
 
-.landing .text .container a:hover .imgPlanet {
+.landing .textSection .container a:hover .imgPlanet {
   background-color: white;
   -webkit-box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px #f0f, 0 0 140px 90px #0ff;
           box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px #f0f, 0 0 140px 90px #0ff;
