@@ -37,9 +37,21 @@ p, a {
   }
 }
 
+@media screen and (min-width: 1500px) {
+  p, a {
+    font-size: 21px !important;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   font-family: 'Hepta Slab', serif;
+}
+
+@media screen and (min-width: 1500px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 65px !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -493,7 +505,7 @@ footer {
   text-align: center;
 }
 
-footer h2 {
+footer p {
   width: 100%;
   position: absolute;
   left: 50%;
@@ -503,7 +515,7 @@ footer h2 {
 }
 
 @media screen and (max-width: 500px) {
-  footer h2 {
+  footer p {
     font-size: 20px !important;
   }
 }
