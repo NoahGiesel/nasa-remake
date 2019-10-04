@@ -5,7 +5,7 @@
     const textOfDay = document.getElementById("textOfDay_one")
 
     const copyright = document.getElementById("copyright")
-    const date = document.getElementById("date")
+    const date = document.getElementById("date") 
 
 
 
